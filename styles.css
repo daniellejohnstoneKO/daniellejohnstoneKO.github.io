@@ -65,6 +65,7 @@ button{
 	border-radius: 5px;
 }
 
+
 button>a{
 	color:#333333;
 	text-decoration: none;
@@ -89,4 +90,47 @@ button>a{
     border: 2px solid orange;
     padding: 1px 5px;
 }
+
+
+
+#button {
+  display: inline-block;
+  background-color: #e09d9a;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #333333;
+}
+#button:hover {
+  cursor: pointer;
+-webkit-box-shadow: -1px 2px 20px -5px rgba(0,0,0,0.51);
+-moz-box-shadow: -1px 2px 20px -5px rgba(0,0,0,0.51);
+box-shadow: -1px 2px 20px -5px rgba(0,0,0,0.51);
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+
 
