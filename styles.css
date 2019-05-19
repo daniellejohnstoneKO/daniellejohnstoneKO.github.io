@@ -74,6 +74,7 @@ button>a{
 .content{
 	text-align: left !important;
 	margin:50px;
+	z-index: 1;
 }
 
 
