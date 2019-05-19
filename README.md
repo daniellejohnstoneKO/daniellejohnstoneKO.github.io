@@ -6,6 +6,8 @@ We also wanted ECH to be able to retain control over their media, so that they c
 We decided to put the transcripts online as a compromise between retaining control and allowing access. The transcripts are searchable. If someone wants the audio media itslef, they can complete a form to request it. 
 The result can simply be added to the existing organisation website. 
 
+PLEASE NOTE: The content of these transcripts in the property of Eastside Community Heritage and they retaint he copyright of it. 
+
 <h2> How to use</h2>
 
 1. Convert all transcript files from .docx to html. You can do this manually in Microsoft Word, by saving as a webpage. To do this for a batch, use the following bash from the folder containing transripts:
