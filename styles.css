@@ -73,13 +73,13 @@ button>a{
 
 .content{
 	text-align: left !important;
-	margin:50px;
+	margin:350px;
 	z-index: 1;
 }
 
 
 .space{
-	height:800px;
+	height:600px;
 }
 
 #f1 input[type=submit] {
