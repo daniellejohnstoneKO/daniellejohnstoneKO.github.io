@@ -22,7 +22,7 @@ a{
 	position:fixed;
 	top:3px;
 	right:3px;
-	z-index: 1000;
+	z-index: 3000000000;
 }
 
 .container{
@@ -89,23 +89,3 @@ button>a{
     padding: 1px 5px;
 }
 
-/*.gsc-search-button-v2, .gsc-search-button-v2:hover, .gsc-search-button-v2:focus{
-	background:#e09d9a !important;
-	border:none !important;
-	padding:12px !important;
-	margin-left: 8px !important;
-}
-
-.gsc-search-button-v2 svg{
-	fill:#333333 !important;
-	width:20px !important;
-	height:20px !important;
-}
-
-.gsc-search-box-tools .gsc-search-box .gsc-input{
-	padding:2px !important;
-	font-family: 'Didact Gothic', sans-serif !important;
-	background:none !important;
-	font-size: 20px !important;
-	text-indent: 2px !important;
-}*/
