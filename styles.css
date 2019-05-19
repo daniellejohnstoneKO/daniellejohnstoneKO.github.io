@@ -78,6 +78,14 @@ button>a{
 	z-index: 1;
 }
 
+h2::after{
+	display: block;
+    content: "";
+    border-top: 1.5px solid #c5c3c3;
+    width: 100%;
+    margin: 30px 0px 30px 0px;
+    transform: translateY(-1rem);
+}
 
 .space{
 	height:600px;
