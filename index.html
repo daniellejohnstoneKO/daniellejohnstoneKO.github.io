@@ -6,7 +6,7 @@
     <title>Search transcripts</title>
     <link href="https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap" rel="stylesheet">
     <link rel = "stylesheet" type = "text/css" href = "styles.css" />
-    <script src="search.js"></script>
+    <!-- <script src="search.js"></script> -->
   </head>
   <body>
   	<div class="topbar">
@@ -16,10 +16,11 @@
   	<div class="container">
       <div class="button-box">
     	<h1>Oral history search</h1>
-      <p>Transcripts of all of our oral histories are available through this search. <br>To receive the audio file for a transcript you have found, please send us a request. </p>
+      <p>Transcripts of all of our oral histories are available through this search. <br>To receive the audio file for a transcript you have found, please send us a <a href="" target=_blank">request.</a> </p>
       <form name="f1" id="f1" action="">
-        <input type="text" class="t1" name="t1" value="the" />
+        <input type="text" class="t1" name="t1" placeholder="search" />
         <input type="submit" name="b1" value="Find" />
+        <small>Enter your key words and press enter to search</small>
 
 <!--         <input type="text" id="searchItem" placeholder="Search..">
         <button type="button" onclick="document.getElementById('searchForm').submit(); return false;">Search the transcripts</button>
@@ -39,7 +40,7 @@
           <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
 
           The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
-          <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+          <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the Gordon cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
 
           The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
           </div>
@@ -47,4 +48,49 @@
 
 
   </body> 
+
+  <script>
+
+var TRange = null;
+
+function findString(str) {
+    if (parseInt(navigator.appVersion) < 4) return;
+    var strFound;
+    if (window.find) {
+        // CODE FOR BROWSERS THAT SUPPORT window.find
+        strFound = self.find(str);
+        if (strFound && self.getSelection && !self.getSelection().anchorNode) {
+            strFound = self.find(str)
+        }
+        if (!strFound) {
+            strFound = self.find(str, 0, 1)
+            while (self.find(str, 0, 1)) continue
+        }
+    } else if (navigator.appName.indexOf("Microsoft") != -1) {
+        // EXPLORER-SPECIFIC CODE        
+        if (TRange != null) {
+            TRange.collapse(false)
+            strFound = TRange.findText(str)
+            if (strFound) TRange.select()
+        }
+        if (TRange == null || strFound == 0) {
+            TRange = self.document.body.createTextRange()
+            strFound = TRange.findText(str)
+            if (strFound) TRange.select()
+        }
+    } else if (navigator.appName == "Opera") {
+        alert("Opera browsers not supported, sorry...")
+        return;
+    }
+    if (!strFound) alert("String '" + str + "' not found!")
+        return;
+};
+
+document.getElementById('f1').onsubmit = function() {
+    findString(this.t1.value);
+    return false;
+};
+
+  </script>
+
 </html>

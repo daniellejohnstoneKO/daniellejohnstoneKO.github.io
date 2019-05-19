@@ -11,10 +11,11 @@ body{
 	position:static;
 }
 
-header>a{
+a{
 	color:#e09d9a;
 	text-decoration: none;
 	font-size: 17px;
+	font-weight: bold;
 }
 .btn-right{
 	margin:10px;
@@ -37,6 +38,7 @@ header>a{
 	left:50%;
 	-webkit-transform: translateX(-50%);
     transform: translateX(-50%);
+    margin-top:100px;
 }
 
 h1{
@@ -78,7 +80,7 @@ img{
 
 
 .space{
-	height:400px;
+	height:800px;
 }
 
 #f1 input[type=submit] {
