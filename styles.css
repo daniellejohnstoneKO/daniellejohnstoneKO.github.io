@@ -17,20 +17,18 @@ a{
 	font-size: 17px;
 	font-weight: bold;
 }
-.btn-right{
+.request{
 	margin:10px;
 	position:fixed;
 	top:3px;
 	right:3px;
+	z-index: 1000;
 }
 
 .container{
 	text-align:center;
 	position: relative;
     top: 45px;
-    /*left: 50%;*/
-    /*-webkit-transform: translateX(-50%, -50%);*/
-    /*transform: translate(-50%, -50%);*/
 }
 
 .button-box {
