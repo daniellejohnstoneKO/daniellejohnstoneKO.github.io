@@ -1,0 +1,111 @@
+body{
+	font-family: 'Didact Gothic', sans-serif;
+	margin:0;
+	padding:0;
+	color:#333333;
+}
+
+.topbar{
+	background:#333333;
+	padding:20px;
+	position:static;
+}
+
+header>a{
+	color:#e09d9a;
+	text-decoration: none;
+	font-size: 17px;
+}
+.btn-right{
+	margin:10px;
+	position:fixed;
+	top:3px;
+	right:3px;
+}
+
+.container{
+	text-align:center;
+	position: relative;
+    top: 45px;
+    /*left: 50%;*/
+    /*-webkit-transform: translateX(-50%, -50%);*/
+    /*transform: translate(-50%, -50%);*/
+}
+
+.button-box {
+	position:absolute;
+	left:50%;
+	-webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+h1{
+	font-size:47px;
+}
+
+p{
+	margin:40px;
+	font-size:17px;
+}
+
+button, input{
+	font-family: 'Didact Gothic', sans-serif;
+	font-size: 18px;
+}
+
+input{
+	height:40px;
+}
+
+button{
+	padding:8px 13px 8px 13px;
+	margin:10px 30px 10px 10px;
+	background:#e09d9a;
+	border:none;
+	border-radius: 5px;
+}
+
+button>a{
+	color:#333333;
+	text-decoration: none;
+	font-weight: bold;
+}
+img{
+	width:15px;
+	vertical-align: center;
+	margin-left:7px;
+}
+
+
+.space{
+	height:400px;
+}
+
+#f1 input[type=submit] {
+    display: none;
+}
+.t1 {
+    border: 2px solid orange;
+    padding: 1px 5px;
+}
+
+/*.gsc-search-button-v2, .gsc-search-button-v2:hover, .gsc-search-button-v2:focus{
+	background:#e09d9a !important;
+	border:none !important;
+	padding:12px !important;
+	margin-left: 8px !important;
+}
+
+.gsc-search-button-v2 svg{
+	fill:#333333 !important;
+	width:20px !important;
+	height:20px !important;
+}
+
+.gsc-search-box-tools .gsc-search-box .gsc-input{
+	padding:2px !important;
+	font-family: 'Didact Gothic', sans-serif !important;
+	background:none !important;
+	font-size: 20px !important;
+	text-indent: 2px !important;
+}*/
