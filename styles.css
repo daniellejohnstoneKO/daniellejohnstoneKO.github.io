@@ -1,3 +1,5 @@
+
+
 body{
 	font-family: 'Didact Gothic', sans-serif;
 	margin:0;
@@ -142,5 +144,11 @@ box-shadow: -1px 2px 20px -5px rgba(0,0,0,0.51);
   visibility: visible;
 }
 
+@media only screen and (max-width: 767px){
 
+	.content{
+		margin:20px !important;
+	}
+
+}
 
