@@ -99,7 +99,9 @@ h2::after{
     padding: 1px 5px;
 }
 
-
+.instruction{
+	display:block;
+}
 
 #button {
   display: inline-block;
