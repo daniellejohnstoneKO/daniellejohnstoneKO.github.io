@@ -149,6 +149,13 @@ box-shadow: -1px 2px 20px -5px rgba(0,0,0,0.51);
 	.content{
 		margin:20px !important;
 	}
+	.button-box {
+		position:absolute;
+		left:5%;
+		-webkit-transform: translateX(-5%);
+	    transform: translateX(-5%);
+/*	    margin-top:100px;*/
+	}
 
 }
 
